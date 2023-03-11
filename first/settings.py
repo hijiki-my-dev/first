@@ -165,3 +165,8 @@ LOGGING = {
         },
     }
 }
+
+#追加したbootstrapに関して。
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
