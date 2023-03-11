@@ -1,3 +1,4 @@
+#本番環境とローカル環境で共通する処理
 """
 Django settings for first project.
 
