@@ -1,4 +1,6 @@
 from django import forms
+from django.core.mail import EmailMessage
+#import os
 
 
 class InquiryForm(forms.Form):
@@ -31,9 +33,11 @@ class InquiryForm(forms.Form):
 
         subject = 'お問い合わせ {}'.format(title)
         message = '送信者名: {0}\nメールアドレス: {1}\nメッセージ:\n{2}'.format(name, email, message)
-        from_email = os.environ.get('FROM_EMAIL')
+        #from_email = os.environ.get('FROM_EMAIL')
+        from_email = 'admin@example.com'
         to_list = [
-            os.environ.get('FROM_EMAIL')
+            #os.environ.get('FROM_EMAIL')
+            'test@example.com'
         ]
         cc_list = [
             email
