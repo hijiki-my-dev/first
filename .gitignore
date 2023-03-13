@@ -1,2 +1,5 @@
 settings_local.py
+
 __pycache__/
+
+.vscode/
